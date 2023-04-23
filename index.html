@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="head"></div>
+    <div id="log1" class="log">
+      <nav>
+        <ul>
+          <li><a href="portfolio.html"> Home</a></li>
+          <li><a href="#about"> About</a></li>
+          <li><a href="Resume for intern.pdf"target="_blank" view> CV</a></li>
+          <li><a href="#contact"> Contact</a></li>
+          <li><a href="personal.html" target="_blank">Collection</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="im"></div>
+    <div class="intro">
+      <h2>Welcome to my Portfolio</h2>
+    </div>
+    <p class="heading">
+      I'M <span>Sandeep</span><br />
+      From India
+    </p>
+    <div class="abt" id="about">
+      <div id="im2"></div>
+      <div class="abth">
+        <h2>About ME</h2>
+        <p class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quo,
+          distinctio<br />
+          nam iure error maiores exercitationem maxime temporibus ipsam
+          numquam<br />
+          consequatur labore adipisci excepturi similique doloribus odit eveniet
+          <br />officia quos!
+        </p>
+      </div>
+    </div>
+    <div class="breif">
+      <ul>
+        <li><span>Skills</span></li>
+        <li>Interests</li>
+        <li>Languages</li>
+      </ul>
+    </div>
+    <div class="skills">
+      <ul>
+        <li>
+          <span>Front End Developer</span><br />
+          Designing Web interfaces
+        </li>
+        <li>
+          <span>Photo Editor</span><br />
+          Editing Photos Using Adobe<br />
+          photoshop
+        </li>
+        <li>
+          <span>Problem Solving</span><br />
+          Solving Coding problems
+        </li>
+        <li>
+          <span>Programming</span><br />
+          C,C++,PYTHON,SQL(basics)
+        </li>
+      </ul>
+    </div>
+    <div class="interests">
+      <ul>
+        <li>Listening <span>Music</span></li>
+        <li>Playing <span>Chess</span></li>
+        <li>Watching <span>Movies</span></li>
+        <li>Learning New <span>Skills</span></li>
+      </ul>
+    </div>
+    <div class="lang">
+      <ul>
+        <li><span>Telugu</span></li>
+        <li><span>Hindi</span></li>
+        <li><span>English</span></li>
+      </ul>
+    </div>
+    <div class="b2">
+      <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="det">
+        <p><i class="fa-thin fa-envelope"></i><span>E-Mail:</span> santosh728p@gmail.com</p>
+        <p><i class="fa-duotone fa-phone"></i><span>Ph-no:</span> +919014577730</p>
+      </div>
+    </div>
+    <div class="dow">
+       <button> <a href="Resume for intern.pdf"  download> Download CV</a>
+       </button>  
+    </div>
+    <div class="logo">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+   <div class="msg">
+    <form name="submit-to-google-sheet">
+        <h2>Text Me</h2>
+    <input type="text" name="Name" required placeholder="enter name">
+    <input type="email" name="E-mail" required placeholder="enter mail-Id">
+    <textarea type="text" rows="5" name="Message" placeholder="your msg"></textarea>
+    <button type="submit">SEND</button>
+    </form>
+    <span id="msg"></span>
+   </div>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzl3xkWP0HofLX0hc-1wdye15fLWsPKwBF-MSMfFEY07dAMYxtEXfrxjcSVOPvN2io3/exec'
+    const form = document.forms['submit-to-google-sheet']
+     const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },4000)
+form.reset()})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
