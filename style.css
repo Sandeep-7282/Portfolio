@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-image: url(b1.jpg);
    border-radius: 250px;
-  margin: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 #im2:hover {
   transform: scale(1.1);
@@ -81,9 +81,9 @@ nav ul li a:hover {
 }
 .heading span.sub{
    font-size: 40px;
-   text-decoration: underline;
+   text-decoration: underline 2px #ff004f;
    margin: 0px 0px 0px 20px; 
-   padding: 0px -90px 0px 0px;
+   padding: 0px 0px 0px 0px;
    font-family: 'Times New Roman', Times, serif;
 }
 #im2 {
