@@ -184,6 +184,16 @@ html {
 button {
   background-color: #ff004f;
   padding: 10px;
+  
+}
+button a{
+  text-decoration: none;
+  color: #fffeff;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+button a:hover{
+    color: #00ccff;
 }
 form {
   margin: -270px 0px 0px 800px;
@@ -206,10 +216,12 @@ form.name {
 }
 form button {
   width: 80px;
+  color: #fffeff;
   border-radius: 20px;
 }
 form button:hover {
   cursor: pointer;
+  color: #00ccff;
 }
 form input,
 form textarea {
