@@ -79,10 +79,11 @@ nav ul li a:hover {
    margin:0px 0px 0px -10px;
   color: #ff004f;
 }
-.heading span.sub{
-   font-size: 40px;
-   text-decoration: underline 2px #ff004f;
-   margin: 0px 0px 0px 20px; 
+.n1{
+  font-size: 35px;
+  text-decoration: underline 2px #ff004f;
+   color: #fffeff;
+   margin: 0px 0px 0px 580px; 
    padding: 0px 0px 0px 0px;
    font-family: 'Times New Roman', Times, serif;
 }
@@ -90,6 +91,7 @@ nav ul li a:hover {
   height: 490px;
   width: 251px;
   background-image: url(b2.png);
+  border-radius: 70px;
   transition: transform (0.1s);
   margin: 220px 0px 0px 970px;
 }
