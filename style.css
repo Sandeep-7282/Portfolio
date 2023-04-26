@@ -5,7 +5,7 @@
   font-family: "Roboto Slab", serif;
 }
 body {
-  background-color: rgb(31 17 17);
+  background-image: linear-gradient(to right, #178585 0%, #9d42d2a3 100%);
 }
 #head {
   width: 400px;
@@ -13,18 +13,18 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url(b1.jpg);
-   border-radius: 250px;
-  margin: 15px 0px 0px 0px;
+  border-radius: 250px;
+  margin: 15px 0px 0px 02px;
 }
 #im2:hover {
   transform: scale(1.1);
 }
-.log {
+nav {
   margin: -600px 0px 0px 400px;
-  background-color: linear-gradient(rgb(86, 78, 78), #ff004f);
-  width: 807px;
+  background-image: linear-gradient(to bottom, #8baaaa 0%, #ae8b9c 100%);  width: 807px;
   height: 40px;
-  display: flex;
+  border-radius: 400px;
+    display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -44,12 +44,12 @@ nav ul li a {
 }
 nav ul li a:hover {
   cursor: pointer;
-  color: #ff004f;
+  color: #ff0000;
   transform-box: scale(1.6);
 }
 .intro {
   margin: 50px 700px 0px 700px;
-  color: azure;
+  color: rgb(255, 255, 255);
   font-family: "Roboto Slab", serif;
   display: inline;
   font-weight: 900;
@@ -70,22 +70,22 @@ nav ul li a:hover {
   font-weight: 900;
   font-size: 60px;
 }
-.heading,.heading span.nm{
-   font-size: 100px;
-   margin-left: 50px;
-
+.heading,
+.heading span.nm {
+  font-size: 100px;
+  margin-left: 50px;
 }
-.heading span.nm{
-   margin:0px 0px 0px -10px;
+.heading span.nm {
+  margin: 0px 0px 0px -10px;
   color: #ff004f;
 }
-.n1{
+.n1 {
   font-size: 35px;
-  text-decoration: underline 2px #ff004f;
-   color: #fffeff;
-   margin: 0px 0px 0px 580px; 
-   padding: 0px 0px 0px 0px;
-   font-family: 'Times New Roman', Times, serif;
+
+  color: #fffeff;
+  margin: 0px 0px 0px 580px;
+  padding: 0px 0px 0px 0px;
+  font-family: "Times New Roman", Times, serif;
 }
 #im2 {
   height: 490px;
@@ -93,7 +93,7 @@ nav ul li a:hover {
   background-image: url(b2.png);
   border-radius: 70px;
   transition: transform (0.1s);
-  margin: 220px 0px 0px 970px;
+  margin: 220px 0px 0px 958px;
 }
 .abth h2 {
   color: azure;
@@ -101,7 +101,6 @@ nav ul li a:hover {
   margin: -500px 0px 0px 400px;
   font-size: 40px;
   font-weight: 600;
-  text-decoration: underline 3px #ff004f;
 }
 .abth p {
   color: azure;
@@ -116,41 +115,43 @@ nav ul li a:hover {
   color: aliceblue;
   margin: 30px 0px 0px 0px;
   padding: 10px 0px 100px 140px;
-  text-decoration: underline 3px solid #ff004f;
   font-size: 30px;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
 }
 .skills ul li {
   color: aliceblue;
+  
   margin: 20px 0px 0px 90px;
   font-size: 18px;
   font-weight: 300;
 }
 .skills ul li span {
-  color: #ff004f;
+  color: #000000;
   font-size: 20px;
   font-weight: 500;
 }
 .interests ul li {
   color: aliceblue;
+ 
   margin: -79px 0px 0px 370px;
   font-size: 18px;
   font-weight: 300;
 }
 .interests ul li span {
-  color: #ff004f;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
 }
 .lang ul li {
   margin: -72px 0px 0px 650px;
+
   color: aliceblue;
   font-size: 18px;
   font-weight: 300;
 }
 .lang ul li span {
-  color: #ff004f;
+  color: #000000;
 }
 .det {
   color: #fffeff;
@@ -161,7 +162,6 @@ nav ul li a:hover {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
   font-weight: 600;
-  text-decoration: underline 3px #ff004f;
 }
 
 .det p {
@@ -175,7 +175,7 @@ html {
   scroll-behavior: smooth;
 }
 .det p span {
-  color: #ff004f;
+  color: #000000;
 }
 .dow {
   margin: 30px 0px 0px 200px;
@@ -184,29 +184,27 @@ html {
   color: solid black;
 }
 button {
-  background-color: #ff004f;
+  background-color: #ff0000;
   padding: 10px;
-  
 }
-button a{
+button a {
   text-decoration: none;
   color: #fffeff;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-button a:hover{
-    color: #00ccff;
+button a:hover {
+  color: #00ccff;
 }
 form {
   margin: -270px 0px 0px 800px;
   display: grid;
   row-gap: 15px;
-  color: #ff004f;
+  color: #ff0000;
   width: 300px;
 }
 form h2 {
   color: azure;
-  text-decoration: underline 3px #ff004f;
   font-size: 30px;
   font-weight: 600;
   margin: -12px 0px 0px 0px;
@@ -221,13 +219,14 @@ form button {
   color: #fffeff;
   border-radius: 20px;
 }
+
 form button:hover {
   cursor: pointer;
-  color: #00ccff;
+  color: #0c0c0c;
 }
 form input,
 form textarea {
-  border: 1px solid #ff004f;
+  border: 1px solid #ff0000;
   color: black;
   padding: 10px;
   font-family: "Times New Roman", Times, serif;
@@ -246,4 +245,7 @@ form input::placeholder {
   width: 170px;
   background-color: rgb(0, 0, 0);
   display: block;
+}
+@media only screen and (max-width: ) {
+        
 }
